@@ -23,7 +23,7 @@ def get_extensions():
     extension = CppExtension
     extra_compile_args = {"cxx": []}
     define_macros = []
-
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CUDA_HOME", CUDA_HOME, torch.cuda.is_available())
     if torch.cuda.is_available() and CUDA_HOME is not None:
         extension = CUDAExtension
         sources += source_cuda

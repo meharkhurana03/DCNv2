@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-python setup.py build develop
+python3.9 setup.py build develop
+
